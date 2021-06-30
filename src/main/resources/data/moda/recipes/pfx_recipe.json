@@ -1,0 +1,19 @@
+{
+  "group": "moda",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:slime_ball"
+    },
+    {
+      "item": "minecraft:potion"
+    },
+    {
+      "item": "minecraft:obsidian"
+    }
+  ],
+  "result": {
+    "item": "moda:pfx",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "uh_uh_uh": {
+    "category": "master",
+    "subtitle": "subtitles.uh_uh_uh",
+    "sounds": [
+      {
+        "name": "moda:uh_uh_uh",
+        "stream": false
+      }
+    ]
+  }
+}

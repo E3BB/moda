@@ -1,0 +1,81 @@
+{
+  "_fv": 18,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Type in Potion Id",
+          "width": 120,
+          "height": 20,
+          "name": "potion_id",
+          "x": 153,
+          "y": 104
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Potion Effects Maker",
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "name": "Potion Effects Maker",
+          "x": 163,
+          "y": 49
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Apply Effect",
+          "onClick": {
+            "name": "PfxGuiClicked"
+          },
+          "width": 85,
+          "height": 20,
+          "name": "Apply Effect",
+          "x": 171,
+          "y": 139
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Clear All Effects",
+          "onClick": {
+            "name": "PfxGuiClickedB"
+          },
+          "width": 110,
+          "height": 20,
+          "name": "Clear All Effects",
+          "x": 158,
+          "y": 171
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Clear Effect",
+          "onClick": {
+            "name": "PfxGuiClickedC"
+          },
+          "width": 85,
+          "height": 20,
+          "name": "Clear Effect",
+          "x": 171,
+          "y": 76
+        }
+      }
+    ]
+  }
+}

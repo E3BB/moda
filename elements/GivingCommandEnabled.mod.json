@@ -1,0 +1,12 @@
+{
+  "_fv": 18,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Logic",
+    "displayName": "Giving Command",
+    "description": "Should the Giving Command be Enabled?",
+    "category": "CHAT",
+    "defaultValueLogic": true,
+    "defaultValueNumber": 0
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "_fv": 18,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "battlestaff",
+    "customModelName": "Normal",
+    "name": "Battlestaff",
+    "specialInfo": [
+      "Right-Click in Main-hand to Throw"
+    ],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": "CUSTOM:Battlestaff"
+    },
+    "shootConstantly": false,
+    "usageCount": 512,
+    "actionSound": {
+      "value": "block.bamboo.hit"
+    },
+    "hasGlow": false,
+    "animation": "none",
+    "enableMeleeDamage": true,
+    "damageVsEntity": 10.0,
+    "onRangedItemUsed": {
+      "name": "BattlestaffUsed"
+    },
+    "useCondition": {
+      "name": "BattlestaffUseable"
+    },
+    "bulletPower": 1.5,
+    "bulletDamage": 5.0,
+    "bulletKnockback": 1,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:Battlestaff"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "BattlestaffHit"
+    },
+    "onBulletHitsEntity": {
+      "name": "BattlestaffHitEntity"
+    }
+  }
+}

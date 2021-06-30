@@ -1,0 +1,23 @@
+{
+  "item.moda.pfx": "PFX",
+  "key.moda.survival": "Survival",
+  "item.moda.battlestaff": "Battlestaff",
+  "item.moda.epic_sword": "Epic Sword",
+  "item.moda.unbreaker": "Unbreaker",
+  "item.moda.teleporter": "Teleporter",
+  "item.moda.exploder": "Exploder",
+  "enchantment.moda.thundering": "Thundering",
+  "subtitles.uh_uh_uh": "Uh Uh Uh rings out",
+  "key.moda.creative": "Creative",
+  "gamerule.givingCommandEnabled.description": "Should the Giving Command be Enabled?",
+  "item.moda.rifle": "Rifle",
+  "gamerule.givingCommandEnabled": "Giving Command",
+  "item.moda.tipped_enchanter": "Tipped Enchanter",
+  "enchantment.moda.leeching": "Leeching",
+  "gamerule.gamemodeKeysEnabled": "Gamemode Keys",
+  "enchantment.moda.tipped": "Tipped",
+  "key.moda.double_jump_key": "Double Jump Key",
+  "key.category.a": "",
+  "key.moda.spectator": "Spectator",
+  "gamerule.gamemodeKeysEnabled.description": "Should Gamemode Keys be Enabled?"
+}

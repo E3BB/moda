@@ -1,0 +1,37 @@
+{
+  "_fv": 18,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "tipped",
+    "customModelName": "Normal",
+    "name": "Tipped Enchanter",
+    "specialInfo": [
+      "Tips your items with a random potion effect",
+      "Works with tools and weapons",
+      "Put weapon in Off-Hand to enchant with this"
+    ],
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "toolType": "Special",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.0,
+    "enchantability": 2,
+    "damageVsEntity": 4.0,
+    "usageCount": 10,
+    "blocksAffected": [],
+    "hasGlow": true,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "TippedEnchanterUsed"
+    },
+    "onRightClickedOnBlock": {
+      "name": "TippedEnchanterUsed"
+    }
+  }
+}

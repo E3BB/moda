@@ -1,0 +1,40 @@
+{
+  "_fv": 18,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "pfx",
+    "customModelName": "Normal",
+    "name": "PFX",
+    "specialInfo": [
+      "Gives you Potion Effects",
+      "Keep in Main-Hand, Right-Click to access Menu"
+    ],
+    "creativeTab": {
+      "value": "BREWING"
+    },
+    "toolType": "Special",
+    "harvestLevel": 0,
+    "efficiency": 4.0,
+    "attackSpeed": 1.0,
+    "enchantability": 2,
+    "damageVsEntity": 4.0,
+    "usageCount": 25,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "Blocks.GLASS"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "PfxClicked"
+    },
+    "onRightClickedOnBlock": {
+      "name": "PfxClicked"
+    }
+  }
+}

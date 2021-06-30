@@ -1,0 +1,11 @@
+{
+  "_fv": 18,
+  "_type": "command",
+  "definition": {
+    "commandName": "gameruling",
+    "permissionLevel": "No requirement",
+    "onCommandExecuted": {
+      "name": "GamerulingExecuted"
+    }
+  }
+}

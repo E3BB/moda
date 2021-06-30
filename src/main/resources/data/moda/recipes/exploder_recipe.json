@@ -1,0 +1,26 @@
+{
+  "group": "moda",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3  "
+  ],
+  "key": {
+    "0": {
+      "tag": "minecraft:sand"
+    },
+    "1": {
+      "tag": "minecraft:sand"
+    },
+    "2": {
+      "item": "minecraft:gunpowder"
+    },
+    "3": {
+      "tag": "minecraft:sand"
+    }
+  },
+  "result": {
+    "item": "moda:exploder",
+    "count": 1
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "_fv": 18,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "teleporter",
+    "customModelName": "Normal",
+    "name": "Teleporter",
+    "specialInfo": [
+      "Right-Click to Teleport to the Block you Look at"
+    ],
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "toolType": "Special",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.0,
+    "enchantability": 2,
+    "damageVsEntity": 4.0,
+    "usageCount": 20000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "Items.ENDER_PEARL"
+      },
+      {
+        "value": "Items.ENDER_EYE"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "TeleporterClicked"
+    },
+    "onRightClickedOnBlock": {
+      "name": "TeleporterClicked"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "moda:custom/rifle",
+  "textures": {
+    "0": "moda:blocks/rifle",
+    "particle": "moda:items/rifle"
+  }
+}

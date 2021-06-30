@@ -1,0 +1,1230 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "DoubleJumpKey",
+      "type": "keybind",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "double_jump_key",
+      "path": "~/DoubleJump"
+    },
+    {
+      "name": "DoubleJumpPressed",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "double_jump_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/DoubleJump"
+    },
+    {
+      "name": "DoubleJumpAlways",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "double_jump_always",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/DoubleJump"
+    },
+    {
+      "name": "GivingProcedure",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "giving_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "cmdparams",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GivingCommand"
+    },
+    {
+      "name": "GivingCommand",
+      "type": "command",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "giving_command",
+      "path": "~/GivingCommand"
+    },
+    {
+      "name": "Unbreaker",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "unbreaker",
+      "path": "~/UnbreakerItem"
+    },
+    {
+      "name": "UnbreakerRecipe",
+      "type": "recipe",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "unbreaker_recipe",
+      "path": "~/UnbreakerItem"
+    },
+    {
+      "name": "UnbreakerRightClicked",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "unbreaker_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/UnbreakerItem"
+    },
+    {
+      "name": "PfxGui",
+      "type": "gui",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pfx_gui",
+      "path": "~/Pfx"
+    },
+    {
+      "name": "Pfx",
+      "type": "tool",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pfx",
+      "path": "~/Pfx"
+    },
+    {
+      "name": "PfxClicked",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pfx_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Pfx"
+    },
+    {
+      "name": "PfxGuiClicked",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pfx_gui_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Pfx"
+    },
+    {
+      "name": "TeleporterClicked",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "teleporter_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Teleporter"
+    },
+    {
+      "name": "Teleporter",
+      "type": "tool",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "teleporter",
+      "path": "~/Teleporter"
+    },
+    {
+      "name": "PfxGuiClickedB",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pfx_gui_clicked_b",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Pfx"
+    },
+    {
+      "name": "PfxGuiClickedC",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pfx_gui_clicked_c",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Pfx"
+    },
+    {
+      "name": "SurvivalProcedure",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "survival_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Gamemode Keybinds"
+    },
+    {
+      "name": "SpectatorProcedure",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spectator_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Gamemode Keybinds"
+    },
+    {
+      "name": "CreativeProcedure",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "creative_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Gamemode Keybinds"
+    },
+    {
+      "name": "Survival",
+      "type": "keybind",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "survival",
+      "path": "~/Gamemode Keybinds"
+    },
+    {
+      "name": "Spectator",
+      "type": "keybind",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spectator",
+      "path": "~/Gamemode Keybinds"
+    },
+    {
+      "name": "Creative",
+      "type": "keybind",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "creative",
+      "path": "~/Gamemode Keybinds"
+    },
+    {
+      "name": "TimingProcedure",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "timing_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "cmdparams",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/TimingCommand"
+    },
+    {
+      "name": "TimingCommand",
+      "type": "command",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "timing_command",
+      "path": "~/TimingCommand"
+    },
+    {
+      "name": "GivingCommandEnabled",
+      "type": "gamerule",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "givingCommandEnabled",
+      "metadata": {
+        "type": "boolean"
+      },
+      "path": "~/GivingCommand"
+    },
+    {
+      "name": "GamemodeKeysEnabled",
+      "type": "gamerule",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gamemodeKeysEnabled",
+      "metadata": {
+        "type": "boolean"
+      },
+      "path": "~/Gamemode Keybinds"
+    },
+    {
+      "name": "TeleporterRecipe",
+      "type": "recipe",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "teleporter_recipe",
+      "path": "~/Teleporter"
+    },
+    {
+      "name": "TeleporterRecipeB",
+      "type": "recipe",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "teleporter_recipe_b",
+      "path": "~/Teleporter"
+    },
+    {
+      "name": "PfxRecipe",
+      "type": "recipe",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pfx_recipe",
+      "path": "~/Pfx"
+    },
+    {
+      "name": "ExploderPriming",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "exploder_priming",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Exploder"
+    },
+    {
+      "name": "Exploder",
+      "type": "gun",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "exploder",
+      "path": "~/Exploder"
+    },
+    {
+      "name": "ExploderRecipe",
+      "type": "recipe",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "exploder_recipe",
+      "path": "~/Exploder"
+    },
+    {
+      "name": "ExploderRecipeB",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "exploder_recipe_b",
+      "path": "~/Exploder"
+    },
+    {
+      "name": "Leeching",
+      "type": "enchantment",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "leeching",
+      "path": "~/LeechingEnchantment"
+    },
+    {
+      "name": "LeechingProcedure",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "leeching_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/LeechingEnchantment"
+    },
+    {
+      "name": "Tipped",
+      "type": "enchantment",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tipped",
+      "path": "~/TippedEnchantment"
+    },
+    {
+      "name": "TippedAttack",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tipped_attack",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/TippedEnchantment"
+    },
+    {
+      "name": "TippedEnchanterUsed",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tipped_enchanter_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/TippedEnchantment"
+    },
+    {
+      "name": "TippedEnchanter",
+      "type": "tool",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tipped_enchanter",
+      "path": "~/TippedEnchantment"
+    },
+    {
+      "name": "RifleCondition",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rifle_condition",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/SniperRifle"
+    },
+    {
+      "name": "RifleUsed",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rifle_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/SniperRifle"
+    },
+    {
+      "name": "RifleInhand",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rifle_inhand",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/SniperRifle"
+    },
+    {
+      "name": "Rifle",
+      "type": "gun",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rifle",
+      "path": "~/SniperRifle"
+    },
+    {
+      "name": "BulletHitsBlock",
+      "type": "procedure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bullet_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/SniperRifle"
+    },
+    {
+      "name": "Gameruling",
+      "type": "command",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gameruling",
+      "path": "~/GamerulingCommand"
+    },
+    {
+      "name": "GamerulingExecuted",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gameruling_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "cmdparams",
+            "type": "map"
+          }
+        ]
+      },
+      "path": "~/GamerulingCommand"
+    },
+    {
+      "name": "EpicSword",
+      "type": "tool",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "epic_sword",
+      "path": "~/EpicSword"
+    },
+    {
+      "name": "Thundering",
+      "type": "enchantment",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thundering",
+      "path": "~/Thundering"
+    },
+    {
+      "name": "ThunderingActivate",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thundering_activate",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Thundering"
+    },
+    {
+      "name": "UnrelatedA",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "unrelated_a",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/UnrelatedStuff"
+    },
+    {
+      "name": "ThrowableFireball",
+      "type": "procedure",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "throwable_fireball",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ThrowableFireball"
+    },
+    {
+      "name": "RifleRecipe",
+      "type": "recipe",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rifle_recipe",
+      "path": "~/SniperRifle"
+    },
+    {
+      "name": "RifleRecipeB",
+      "type": "recipe",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rifle_recipe_b",
+      "path": "~/SniperRifle"
+    },
+    {
+      "name": "BattlestaffUsed",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "battlestaff_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Battlestaff"
+    },
+    {
+      "name": "BattlestaffHit",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "battlestaff_hit",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Battlestaff"
+    },
+    {
+      "name": "Battlestaff",
+      "type": "gun",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "battlestaff",
+      "path": "~/Battlestaff"
+    },
+    {
+      "name": "BattlestaffUseable",
+      "type": "procedure",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "battlestaff_useable",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Battlestaff"
+    },
+    {
+      "name": "BattlestaffHitEntity",
+      "type": "procedure",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "battlestaff_hit_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Battlestaff"
+    },
+    {
+      "name": "BattlestaffRecipe",
+      "type": "recipe",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "battlestaff_recipe",
+      "path": "~/Battlestaff"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "double_jump",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "Scoping",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "battlestaff",
+      "type": "itemstack",
+      "scope": "player_lifetime",
+      "value": ""
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "uh_uh_uh",
+      "files": [
+        "uh_uh_uh"
+      ],
+      "category": "master",
+      "subtitle": "Uh Uh Uh rings out"
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "item.moda.pfx": "PFX",
+      "key.moda.survival": "Survival",
+      "item.moda.battlestaff": "Battlestaff",
+      "item.moda.epic_sword": "Epic Sword",
+      "item.moda.unbreaker": "Unbreaker",
+      "item.moda.teleporter": "Teleporter",
+      "item.moda.exploder": "Exploder",
+      "enchantment.moda.thundering": "Thundering",
+      "subtitles.uh_uh_uh": "Uh Uh Uh rings out",
+      "key.moda.creative": "Creative",
+      "gamerule.givingCommandEnabled.description": "Should the Giving Command be Enabled?",
+      "item.moda.rifle": "Rifle",
+      "gamerule.givingCommandEnabled": "Giving Command",
+      "item.moda.tipped_enchanter": "Tipped Enchanter",
+      "enchantment.moda.leeching": "Leeching",
+      "gamerule.gamemodeKeysEnabled": "Gamemode Keys",
+      "enchantment.moda.tipped": "Tipped",
+      "key.moda.double_jump_key": "Double Jump Key",
+      "key.category.a": "",
+      "key.moda.spectator": "Spectator",
+      "gamerule.gamemodeKeysEnabled.description": "Should Gamemode Keys be Enabled?"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "DoubleJump",
+        "children": []
+      },
+      {
+        "name": "GivingCommand",
+        "children": []
+      },
+      {
+        "name": "UnbreakerItem",
+        "children": []
+      },
+      {
+        "name": "Pfx",
+        "children": []
+      },
+      {
+        "name": "Teleporter",
+        "children": []
+      },
+      {
+        "name": "Gamemode Keybinds",
+        "children": []
+      },
+      {
+        "name": "TimingCommand",
+        "children": []
+      },
+      {
+        "name": "Exploder",
+        "children": []
+      },
+      {
+        "name": "LeechingEnchantment",
+        "children": []
+      },
+      {
+        "name": "TippedEnchantment",
+        "children": []
+      },
+      {
+        "name": "SniperRifle",
+        "children": []
+      },
+      {
+        "name": "GamerulerCommand",
+        "children": []
+      },
+      {
+        "name": "GamerulingCommand",
+        "children": []
+      },
+      {
+        "name": "EpicSword",
+        "children": []
+      },
+      {
+        "name": "Thundering",
+        "children": []
+      },
+      {
+        "name": "UnrelatedStuff",
+        "children": []
+      },
+      {
+        "name": "SecurityCamera",
+        "children": []
+      },
+      {
+        "name": "ThrowableFireball",
+        "children": []
+      },
+      {
+        "name": "Battlestaff",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "moda",
+    "modName": "ModA",
+    "version": "1.0.0",
+    "author": "elliottbotelho, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.moda",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100118117
+}
