@@ -1084,12 +1084,6 @@
       "type": "logic",
       "scope": "player_lifetime",
       "value": "false"
-    },
-    {
-      "name": "battlestaff",
-      "type": "itemstack",
-      "scope": "player_lifetime",
-      "value": ""
     }
   ],
   "sound_elements": [
@@ -1204,6 +1198,10 @@
       },
       {
         "name": "Battlestaff",
+        "children": []
+      },
+      {
+        "name": "IronPole",
         "children": []
       }
     ]

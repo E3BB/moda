@@ -19,7 +19,6 @@ import net.minecraft.util.Direction;
 import net.minecraft.network.PacketBuffer;
 import net.minecraft.nbt.INBT;
 import net.minecraft.nbt.CompoundNBT;
-import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
@@ -70,7 +69,6 @@ public class ModaModVariables {
 			CompoundNBT nbt = new CompoundNBT();
 			nbt.putBoolean("double_jump", instance.double_jump);
 			nbt.putBoolean("Scoping", instance.Scoping);
-			nbt.put("battlestaff", instance.battlestaff.write(new CompoundNBT()));
 			return nbt;
 		}
 
@@ -79,14 +77,12 @@ public class ModaModVariables {
 			CompoundNBT nbt = (CompoundNBT) inbt;
 			instance.double_jump = nbt.getBoolean("double_jump");
 			instance.Scoping = nbt.getBoolean("Scoping");
-			instance.battlestaff = ItemStack.read(nbt.getCompound("battlestaff"));
 		}
 	}
 
 	public static class PlayerVariables {
 		public boolean double_jump = false;
 		public boolean Scoping = false;
-		public ItemStack battlestaff = ItemStack.EMPTY;
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayerEntity)
 				ModaMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayerEntity) entity), new PlayerVariablesSyncMessage(this));
@@ -121,7 +117,6 @@ public class ModaModVariables {
 		if (!event.isWasDeath()) {
 			clone.double_jump = original.double_jump;
 			clone.Scoping = original.Scoping;
-			clone.battlestaff = original.battlestaff;
 		}
 	}
 	public static class PlayerVariablesSyncMessage {
@@ -147,7 +142,6 @@ public class ModaModVariables {
 							.orElse(new PlayerVariables()));
 					variables.double_jump = message.data.double_jump;
 					variables.Scoping = message.data.Scoping;
-					variables.battlestaff = message.data.battlestaff;
 				}
 			});
 			context.setPacketHandled(true);

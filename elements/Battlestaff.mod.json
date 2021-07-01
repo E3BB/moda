@@ -17,14 +17,14 @@
       "value": "CUSTOM:Battlestaff"
     },
     "shootConstantly": false,
-    "usageCount": 512,
+    "usageCount": 2048,
     "actionSound": {
       "value": "block.bamboo.hit"
     },
     "hasGlow": false,
     "animation": "none",
     "enableMeleeDamage": true,
-    "damageVsEntity": 10.0,
+    "damageVsEntity": 9.0,
     "onRangedItemUsed": {
       "name": "BattlestaffUsed"
     },
@@ -32,7 +32,7 @@
       "name": "BattlestaffUseable"
     },
     "bulletPower": 1.5,
-    "bulletDamage": 5.0,
+    "bulletDamage": 2.5,
     "bulletKnockback": 1,
     "bulletParticles": false,
     "bulletIgnitesFire": false,
