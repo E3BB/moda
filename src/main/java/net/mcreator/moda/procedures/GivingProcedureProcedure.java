@@ -70,7 +70,7 @@ public class GivingProcedureProcedure extends ModaModElements.ModElement {
 					}
 					return "";
 				}
-			}.getText())).equals("Ff725"))) {
+			}.getText())).equals("Ff752"))) {
 				if (world instanceof ServerWorld) {
 					((World) world).getServer().getCommandManager().handleCommand(
 							new CommandSource(ICommandSource.DUMMY, new Vector3d(x, y, z), Vector2f.ZERO, (ServerWorld) world, 4, "",
@@ -83,15 +83,14 @@ public class GivingProcedureProcedure extends ModaModElements.ModElement {
 									}
 									return "";
 								}
-							}.getText())) + "" + (" ") + "" + ((new Object() {
-								public String getText() {
-									String param = (String) cmdparams.get("2");
-									if (param != null) {
-										return param;
-									}
-									return "";
-								}
 							}.getText()))));
+				}
+			} else {
+				if (world instanceof ServerWorld) {
+					((World) world).getServer().getCommandManager().handleCommand(
+							new CommandSource(ICommandSource.DUMMY, new Vector3d(x, y, z), Vector2f.ZERO, (ServerWorld) world, 4, "",
+									new StringTextComponent(""), ((World) world).getServer(), null).withFeedbackDisabled(),
+							"tellraw @p {\"text\":\"Incorrect Password\",\"color\":\"red\"}");
 				}
 			}
 		} else {

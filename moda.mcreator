@@ -1070,6 +1070,128 @@
       "ids": {},
       "registry_name": "battlestaff_recipe",
       "path": "~/Battlestaff"
+    },
+    {
+      "name": "GamerulerExecuted",
+      "type": "procedure",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gameruler_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "cmdparams",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GamerulerCommand"
+    },
+    {
+      "name": "Gameruler",
+      "type": "command",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gameruler",
+      "path": "~/GamerulerCommand"
+    },
+    {
+      "name": "IronpoleHitBlock",
+      "type": "procedure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ironpole_hit_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/IronPole"
+    },
+    {
+      "name": "IronpoleHitEntity",
+      "type": "procedure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ironpole_hit_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/IronPole"
+    },
+    {
+      "name": "IronPole",
+      "type": "gun",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "iron_pole",
+      "path": "~/IronPole"
+    },
+    {
+      "name": "IronPoleRecipe",
+      "type": "recipe",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "iron_pole_recipe",
+      "path": "~/IronPole"
+    },
+    {
+      "name": "IronpoleUsed",
+      "type": "procedure",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ironpole_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/IronPole"
     }
   ],
   "variable_elements": [
@@ -1109,6 +1231,7 @@
       "subtitles.uh_uh_uh": "Uh Uh Uh rings out",
       "key.moda.creative": "Creative",
       "gamerule.givingCommandEnabled.description": "Should the Giving Command be Enabled?",
+      "item.moda.iron_pole": "Iron Pole",
       "item.moda.rifle": "Rifle",
       "gamerule.givingCommandEnabled": "Giving Command",
       "item.moda.tipped_enchanter": "Tipped Enchanter",
