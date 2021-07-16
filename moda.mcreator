@@ -1192,6 +1192,26 @@
         ]
       },
       "path": "~/IronPole"
+    },
+    {
+      "name": "EpicSwordRecipeA",
+      "type": "recipe",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "epic_sword_recipe_a",
+      "path": "~/EpicSword"
+    },
+    {
+      "name": "EpicSwordRecipeB",
+      "type": "recipe",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "epic_sword_recipe_b",
+      "path": "~/EpicSword"
     }
   ],
   "variable_elements": [

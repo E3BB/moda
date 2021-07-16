@@ -6,15 +6,18 @@
     "texture": "epicsword",
     "customModelName": "Normal",
     "name": "Epic Sword",
-    "specialInfo": [],
+    "specialInfo": [
+      "Forged to handle the Hardest Enchantments,",
+      "this sword is attracted to Great Enchantments"
+    ],
     "creativeTab": {
       "value": "TOOLS"
     },
     "toolType": "Sword",
     "harvestLevel": 5,
     "efficiency": 4.0,
-    "attackSpeed": 3.0,
-    "enchantability": 2,
+    "attackSpeed": 7.0,
+    "enchantability": 45,
     "damageVsEntity": 12.0,
     "usageCount": 20000,
     "blocksAffected": [],

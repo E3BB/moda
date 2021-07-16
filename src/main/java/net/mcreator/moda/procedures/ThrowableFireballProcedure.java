@@ -7,10 +7,13 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
+import net.minecraft.world.GameType;
+import net.minecraft.util.Hand;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.projectile.FireballEntity;
+import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.MobEntity;
@@ -18,11 +21,14 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.Entity;
+import net.minecraft.client.network.play.NetworkPlayerInfo;
+import net.minecraft.client.entity.player.AbstractClientPlayerEntity;
+import net.minecraft.client.Minecraft;
+import net.minecraft.block.Blocks;
 
 import net.mcreator.moda.ModaModElements;
 import net.mcreator.moda.ModaMod;
 
-import java.util.Random;
 import java.util.Map;
 import java.util.HashMap;
 
@@ -76,11 +82,24 @@ public class ThrowableFireballProcedure extends ModaModElements.ModElement {
 							SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
 				world.addEntity(entityToSpawn);
 			}
-			{
-				ItemStack _ist = ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY);
-				if (_ist.attemptDamageItem((int) 1, new Random(), null)) {
-					_ist.shrink(1);
-					_ist.setDamage(0);
+			if ((!(new Object() {
+				public boolean checkGamemode(Entity _ent) {
+					if (_ent instanceof ServerPlayerEntity) {
+						return ((ServerPlayerEntity) _ent).interactionManager.getGameType() == GameType.CREATIVE;
+					} else if (_ent instanceof PlayerEntity && _ent.world.isRemote()) {
+						NetworkPlayerInfo _npi = Minecraft.getInstance().getConnection()
+								.getPlayerInfo(((AbstractClientPlayerEntity) _ent).getGameProfile().getId());
+						return _npi != null && _npi.getGameType() == GameType.CREATIVE;
+					}
+					return false;
+				}
+			}.checkGamemode(entity)))) {
+				if (entity instanceof LivingEntity) {
+					ItemStack _setstack = new ItemStack(Blocks.AIR, (int) (1));
+					_setstack.setCount((int) 1);
+					((LivingEntity) entity).setHeldItem(Hand.MAIN_HAND, _setstack);
+					if (entity instanceof ServerPlayerEntity)
+						((ServerPlayerEntity) entity).inventory.markDirty();
 				}
 			}
 		}
